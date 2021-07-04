@@ -43,6 +43,7 @@ const MainPage = (props) => {
                   <hr className="my-2" />
                 </Jumbotron>
                 <Conversation
+                  roomId={roomId}
                   newMessage={newMessage}
                   messages={messages}
                   handleMessageChange={handleMessageChange}

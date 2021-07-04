@@ -6,11 +6,11 @@ import {
   Button,
 } from 'reactstrap';
 
-const Conversation = ({ newMessage, messages, handleMessageChange, handleSendMessage }) => {
+const Conversation = ({ roomId, newMessage, messages, handleMessageChange, handleSendMessage }) => {
   return (
     <>
       <div>
-        <h3>Chat Box</h3>
+        <h3>Room : {roomId}</h3>
         <div className='chatBox'>
           {messages.length > 0 &&
             messages.map((val, i) => {
